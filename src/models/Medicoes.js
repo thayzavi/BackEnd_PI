@@ -9,4 +9,4 @@ const MedicoesSchema = new mongoose.Schema({
     }
 });
 
-export default mongoose.model("Medicao", MedicoesSchema)
+export default mongoose.model("Medicao", MedicoesSchema);
