@@ -3,7 +3,7 @@ import { receiveData, getAllData } from "../controllers/sensorController.js";
 
 const router = express.Router();
 
-router.post("/send", receiveData);
+router.post("/sensor", receiveData);
 router.get("/all", getAllData);
 
 export default router;
