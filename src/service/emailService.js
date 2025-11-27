@@ -11,7 +11,7 @@ Distância atual: ${distancia} cm
   `;
 
   await resend.emails.send({
-    from: "Alertas <alert@seu-dominio.dev>",
+    from: "Alertas <alertas.meusistema.com>",
     to: process.env.ALERT_EMAILS.split(","),
     subject: `⚠️ Alerta de ${level.toUpperCase()}`,
     text: message
