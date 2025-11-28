@@ -4,10 +4,16 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendAlertEmail(distancia, level) {
   const message = `
-🚨 ALERTA DE ENCHENTES 🚨
+  
+🚨 SISTEMA DE MONITORAMENTO — ALERTA DE ENCHENTES 🚨
 
-Nível detectado: ${level.toUpperCase()}
-Distância atual: ${distancia} cm
+Parâmetros detectados pelo sensor ultrassônico:
+
+• Classificação do nível: ${level.toUpperCase()}
+• Distância registrada: ${distancia} cm
+
+⚠ O valor atual indica risco potencial de enchente.
+Monitore o local e siga as orientações de segurança.
   `;
 
   await resend.emails.send({
