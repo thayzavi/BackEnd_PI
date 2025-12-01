@@ -1,9 +1,12 @@
+import { logAction } from "../midddlewares/log.js";
 import Medicao from "../models/Medicoes.js";
 import { sendAlertEmail } from "../service/emailService.js";
 import { lastLevel, updateLevel } from "../utils/state.js";
 
 export async function receiveData(req, res) {
     const { distancia } = req.body;
+
+    await logAction("RECEIVE_DATA", { distancia }, req);
 
     if (distancia === undefined) {
         return res.status(400).json({ error: "Distância não enviada" });
