@@ -1,4 +1,4 @@
-import Log from "../models/Log";
+import Log from "../models/Log.js";
 
 export async function logAction(action, payload, req){
     try {
