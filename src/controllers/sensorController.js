@@ -6,7 +6,7 @@ import { lastLevel, updateLevel } from "../utils/state.js";
 export async function receiveData(req, res) {
     const { distancia } = req.body;
 
-    await logAction("RECEIVE_DATA", { distancia }, req);
+    await logAction("DADOS_RECEBIDOS", { distancia }, req);
 
     if (distancia === undefined) {
         return res.status(400).json({ error: "Distância não enviada" });
