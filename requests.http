@@ -1,0 +1,3 @@
+### Testar listagem de logs
+GET https://backend-pi-o2zm.onrender.com/logs
+Accept: application/json
