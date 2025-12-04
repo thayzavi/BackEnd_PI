@@ -45,7 +45,7 @@ O e-mail só é enviado quando o nível muda, evitando spam.
 --------------------------------------------------------------------
 📁 ESTRUTURA DO PROJETO
 --------------------------------------------------------------------
-
+```
 src/
  ├── config/db.js
  ├── controllers/
@@ -61,23 +61,25 @@ src/
  ├── service/emailService.js
  ├── utils/state.js
  └── server.js
-
+```
 --------------------------------------------------------------------
 ⚙️ INSTALAÇÃO E EXECUÇÃO
 --------------------------------------------------------------------
 
 1. Instalar dependências:
+```
    npm install
-
-2. Criar arquivo .env com:
+```
+3. Criar arquivo .env com:
    PORT=3000
    MONGO_URI=sua_string_mongo
    RESEND_API_KEY=sua_chave_resend
    ALERT_EMAILS=email1@gmail.com,email2@gmail.com
 
-3. Rodar servidor:
+4. Rodar servidor:
+```
    npm start
-
+```
 --------------------------------------------------------------------
 📡 ENDPOINTS DISPONÍVEIS
 --------------------------------------------------------------------
