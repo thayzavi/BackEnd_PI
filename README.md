@@ -4,11 +4,8 @@
 📌 RESUMO DO PROJETO
 --------------------------------------------------------------------
 
-Este backend foi desenvolvido para integrar um sistema IoT de monitoramento de enchentes. 
-Ele recebe dados enviados por um sensor ultrassônico, classifica o nível de risco, armazena 
-no banco de dados, registra logs e envia alertas automáticos por e-mail quando ocorre mudança 
-no nível detectado.
-
+Este backend foi desenvolvido para integrar um sistema IoT voltado à mobilidade urbana, monitorando o comportamento da água em vias estratégicas da cidade.
+Ele recebe dados de sensores ultrassônicos instalados no ambiente, classifica o nível de risco para o trânsito, armazena as informações no banco de dados, mantém registros de operação e envia alertas automáticos quando mudanças importantes podem afetar o fluxo de veículos e pedestres.
 --------------------------------------------------------------------
 🚀 FUNCIONALIDADES PRINCIPAIS
 --------------------------------------------------------------------
